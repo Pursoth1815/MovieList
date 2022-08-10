@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import MovieCard from "./MovieCard";
 import './App.css';
@@ -16,10 +16,6 @@ const App = () => {
         const data = await response.json();
         setMovies(data.Search);
     }
-
-    // useEffect(() => {
-    //     searchMovies('Captain America');
-    // }, []);
 
     return(
         <div className="app">
